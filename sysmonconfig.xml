@@ -233,6 +233,7 @@
 			<ParentImage condition="is">C:\ProgramData\ZeroTier\One\zerotier-one_x64.exe</ParentImage> <!--ZeroTier Service-->
 			<ParentCommandLine condition="begin with">"cmd.exe" /C " netstat -ano</ParentCommandLine> <!--LabTech-->
 			<CommandLine condition="begin with">"cmd.exe" /C " netstat -ano</CommandLine> <!--LabTech-->
+			<ParentImage condition="begin with">"C:\ProgramData\JWrapper-Remote Access\"</ParentImage> <!--SimpleHelp-->
 		</ProcessCreate>
 	</RuleGroup>
 
