@@ -131,7 +131,7 @@
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k LocalService -p -s BthAvctpSvc</CommandLine>
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localService -s nsi</CommandLine>
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localService -s w32Time</CommandLine>
-      <CommandLine condition="is">C:\Windows\system32\svchost.exe -k localServiceAndNoImpersonation</CommandLine> <!--Windows: Network services-->
+      			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localServiceAndNoImpersonation</CommandLine> <!--Windows: Network services-->
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localServiceAndNoImpersonation -p</CommandLine> <!--Windows: Network services-->
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localServiceNetworkRestricted -s Dhcp</CommandLine> <!--Windows: Network services-->
 			<CommandLine condition="is">C:\Windows\system32\svchost.exe -k localServiceNetworkRestricted -s EventLog</CommandLine>
@@ -234,6 +234,9 @@
 			<ParentCommandLine condition="begin with">"cmd.exe" /C " netstat -ano</ParentCommandLine> <!--LabTech-->
 			<CommandLine condition="begin with">"cmd.exe" /C " netstat -ano</CommandLine> <!--LabTech-->
 			<ParentImage condition="begin with">C:\ProgramData\JWrapper-Remote Access\</ParentImage> <!--SimpleHelp-->
+			<CommandLine condition="begin with">C:\Windows\System32\icacls.exe "C:\ProgramData\ZeroTier\One\networks.d\af415e486fabc7e4.conf"</CommandLine> <!--ZeroTier-->
+			<CommandLine condition="begin with">"C:\Program Files\Bitdefender\Endpoint Security\installer\installer.exe"</CommandLine> <!--Bitdefender-->
+			<CommandLine condition="begin with">"C:\Program Files (x86)\ScreenConnect Client (a43b691ea81f0c20)</CommandLine> <!--ScreenConnect-->
 		</ProcessCreate>
 	</RuleGroup>
 
